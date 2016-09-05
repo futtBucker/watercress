@@ -1,0 +1,55 @@
+
+
+#home h1 {
+  font-family: 'american-typewriter', Helvetica, Arial, sans-serif;
+}
+
+#home h3 {
+  font-family: 'Lobster', cursive, Helvetica, Arial, sans-serif;
+  color: #000;
+}
+#about {
+}
+
+#about .glyphicon {
+
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+
+
+#information {
+  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 500px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}

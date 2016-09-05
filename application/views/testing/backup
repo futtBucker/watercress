@@ -1,0 +1,25 @@
+<script type="text/javascript">
+            $(document).ready(function () {
+                console.log('sip');
+                $('#inputkec').keyup(function () {
+                    if ($(this).val() == '') {
+                        $('#suggestion-box').hide();
+                    } else {
+                        $.ajax({
+                            type: 'POST',
+                            url: "<?php echo base_url('testing/autosuggest'); ?>",
+                            data: "inputkec=" + $(this).val(),
+                            success: function (data) {
+                                $('#suggestion-box').show();
+                                $('#suggestion-box').html(data);
+                            }
+                        });
+                    }
+                });
+            });
+
+            function selectCountry(val) {
+                $('#inputkec').val(val);
+                $('#suggestion-box').hide();
+            }
+        </script>

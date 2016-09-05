@@ -1,0 +1,20 @@
+* =======================
+* PETUNJUK INSTALASI
+* =======================
+
+1. Extract zip file ke C:\xampp\htdocs\
+2. Import database dari folder C:\xampp\htdocs\watercress\assets\database\watercress.sql ke MySQL server Anda
+3. Buka file C:\xampp\htdocs\watercress\application\config\database.php dan ubah parameter koneksi database MySQL sesuai dengan user akses Anda:
+
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'watercress',
+
+4. Buka file C:\xampp\htdocs\watercress\application\config\config.php dan ubah parameter seperti di bawah sesuai dengan settingan path Anda:
+
+$config['base_url'] = 'http://localhost/watercress/';
+$config['template_file'] = $_SERVER['DOCUMENT_ROOT'].'/watercress/assets/';
+$config['js'] = $config['base_url'].'assets/js/';
+$config['css'] = $config['base_url'].'assets/css/';
+$config['data'] = $config['base_url'].'assets/data/';
